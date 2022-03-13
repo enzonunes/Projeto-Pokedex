@@ -1,0 +1,76 @@
+@media(max-width:750px) {
+
+    body{
+        font-size: 12px;
+    }
+
+    .logo img{
+       
+        margin-bottom: -60px;
+        width: 300px;
+        height: auto;
+    
+    }
+
+    .pokedex{
+
+        flex-direction: column;
+        padding: 30px 0;
+
+    }
+
+    .cartao-pokemon{
+
+        max-width: 300px;
+    }
+
+    .cartao-pokemon .cartao-imagem{
+
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+
+
+    .cartao-pokemon  .cartao-info{
+
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+        padding: 60px 30px 30px ;
+        margin-top: -50px;
+    }
+
+    .cartao-pokemon .cartao-info h3{
+
+        font-size: 16px;
+    }
+
+    .menu-pokemon{
+        max-width: 300px;
+    }
+    
+    .menu-pokemon ul{
+
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -100px;
+    }
+
+    .menu-pokemon .pokemon{
+        
+        width: 140px;
+        margin-bottom: 0;
+        border-radius: 8px;
+    }
+
+    .menu-pokemon .pokemon span{
+
+        padding-right: 5px;
+    }
+
+}

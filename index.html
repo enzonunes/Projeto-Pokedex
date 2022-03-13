@@ -8,37 +8,33 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-    <style>
-        h1 {
-            font-family: 'VT323', monospace;
-            font-size: 80px;
-            color: red;
-            text-shadow:
-                -1px -1px 0px black,
-                -1px 1px 0px black,
-                1px -1px 0px black,
-                1px 0px 0px black;
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/cartao.css">
+    <link rel="stylesheet" href="src/css/listagem.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
 
-
-        }
-    </style>
 </head>
 
 <body>
-    <h1>POKEDÉX POKEMON</h1>
-
+    
+    <div class="top-site">
+        <div class="logo">
+            <img src="src/images/Pokemon-Logo.png" alt="logo pokemon">
+        </div>
+    </div>
     <main>
         <div class="pokedex">
             <div class="cartoes-pokemon">
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-eletrico aberto" id="cartao-pikachu">
                     <div class="cartao-top">
                         <div class="info">
                             <h2 class="nome">Pikachu</h2>
                             <span>#025</span>
                         </div>
-                        <span>Elétrico</span>
+                        <span class="tipo">Elétrico</span>
 
                         <div class="cartao-imagem">
 
@@ -59,7 +55,7 @@
                             </ul>
                         </div>
 
-                        <div class="status">
+                        <div class="habilidades">
                             <h3>Habilidades</h3>
 
                             <ul>
@@ -72,13 +68,13 @@
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-grama " id="cartao-bulbassaur">
                     <div class="cartao-top">
                         <div class="info">
                             <h2 class="nome">Bulbassaur</h2>
                             <span>#025</span>
                         </div>
-                        <span>Grama</span>
+                        <span class="tipo">Grama</span>
 
                         <div class="cartao-imagem">
 
@@ -99,26 +95,26 @@
                             </ul>
                         </div>
 
-                        <div class="status">
+                        <div class="habilidades">
                             <h3>Habilidades</h3>
 
                             <ul>
-                                <li>Choque do Trovao</li>
-                                <li>Cauda de Ferro</li>
-                                <li>Ataque Rapido</li>
-                                <li>Descarga</li>
+                                <li>Chicote</li>
+                                <li>Folha de navalha</li>
+                                <li>Cabeçada</li>
+                                <li>Raio Solar</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-fogo" id="cartao-charmander">
                     <div class="cartao-top">
                         <div class="info">
                             <h2 class="nome">Charmander</h2>
                             <span>#025</span>
                         </div>
-                        <span>Grama</span>
+                        <span class="tipo">Fogo</span>
 
                         <div class="cartao-imagem">
 
@@ -139,26 +135,26 @@
                             </ul>
                         </div>
 
-                        <div class="status">
+                        <div class="habilidades">
                             <h3>Habilidades</h3>
 
                             <ul>
-                                <li>Choque do Trovao</li>
-                                <li>Cauda de Ferro</li>
-                                <li>Ataque Rapido</li>
-                                <li>Descarga</li>
+                                <li>Brasa</li>
+                                <li>Cauda de ferro</li>
+                                <li>Overheat</li>
+                                <li>Cabeçada</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-fantasma " id="cartao-gengar">
                     <div class="cartao-top">
                         <div class="info">
                             <h2 class="nome">Gengar</h2>
                             <span>#025</span>
                         </div>
-                        <span>Fantasma</span>
+                        <span class="tipo">Fantasma</span>
 
                         <div class="cartao-imagem">
 
@@ -179,26 +175,26 @@
                             </ul>
                         </div>
 
-                        <div class="status">
+                        <div class="habilidades">
                             <h3>Habilidades</h3>
 
                             <ul>
-                                <li>Choque do Trovao</li>
-                                <li>Cauda de Ferro</li>
-                                <li>Ataque Rapido</li>
-                                <li>Descarga</li>
+                                <li>Bola das trevas</li>
+                                <li>Pesadelo</li>
+                                <li>Soco das trevas</li>
+                                <li>Recover</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-dragao" id="cartao-dragonite">
                     <div class="cartao-top">
                         <div class="info">
                             <h2 class="nome">Dragonite</h2>
                             <span>#025</span>
                         </div>
-                        <span>Dragao</span>
+                        <span class="tipo">Dragao</span>
 
                         <div class="cartao-imagem">
 
@@ -219,26 +215,26 @@
                             </ul>
                         </div>
 
-                        <div class="status">
+                        <div class="habilidades">
                             <h3>Habilidades</h3>
 
                             <ul>
                                 <li>Choque do Trovao</li>
-                                <li>Cauda de Ferro</li>
-                                <li>Ataque Rapido</li>
-                                <li>Descarga</li>
+                                <li>Sopro do dragão</li>
+                                <li>Garra do dragão</li>
+                                <li>Fly</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="cartao-pokemon">
+                <div class="cartao-pokemon tipo-aquatico" id="cartao-gyarados">
                     <div class="cartao-top">
                         <div class="info">
                             <h2 class="nome">Gyarados</h2>
                             <span>#025</span>
                         </div>
-                        <span>Aquatico/Voador</span>
+                        <span class="tipo">Aquatico/Dragao</span>
 
                         <div class="cartao-imagem">
 
@@ -259,13 +255,13 @@
                             </ul>
                         </div>
 
-                        <div class="status">
+                        <div class="habilidades">
                             <h3>Habilidades</h3>
 
                             <ul>
-                                <li>Choque do Trovao</li>
-                                <li>Cauda de Ferro</li>
-                                <li>Ataque Rapido</li>
+                                <li>Hydro Pump</li>
+                                <li>Surf</li>
+                                <li>Sopro do dragão</li>
                                 <li>Descarga</li>
                             </ul>
                         </div>
@@ -275,32 +271,32 @@
 
             <nav class="menu-pokemon">
                 <ul>
-                    <li>
+                    <li class="pokemon ativo" id="pikachu">
                         <img src="src/images/cabeca-pikachu.png" alt="cabeca do pokemon">
                         <span>Pikachu</span>
                     </li>
 
-                    <li>
+                    <li class="pokemon" id="bulbassaur">
                         <img src="src/images/cabeca-bulbasaur.png" alt="cabeca do pokemon">
                         <span>Bulbassaur</span>
                     </li>
 
-                    <li>
+                    <li class="pokemon" id="charmander">
                         <img src="src/images/cabeca-charmander.png" alt="cabeca do pokemon">
                         <span>Charmander</span>
                     </li>
 
-                    <li>
+                    <li class="pokemon" id="gengar">
                         <img src="src/images/cabeca-gengar.png" alt="cabeca do pokemon">
                         <span>Gengar</span>
                     </li>
 
-                    <li>
+                    <li class="pokemon" id="dragonite">
                         <img src="src/images/cabeca-dragonite.png" alt="cabeca do pokemon">
                         <span>Dragonite</span>
                     </li>
 
-                    <li>
+                    <li class="pokemon" id="gyarados">
                         <img src="src/images/cabeca-gyarados.png" alt="cabeca do pokemon">
                         <span>Gyarados</span>
                     </li>
@@ -310,6 +306,8 @@
 
         </div>
     </main>
+
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>
