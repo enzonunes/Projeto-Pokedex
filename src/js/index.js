@@ -1,7 +1,7 @@
 
 
 const listagemPokemon = document.querySelectorAll('.pokemon') 
-const PokemonCard = document.querySelectorAll('.cartao-pokemon')
+
 
 listagemPokemon.forEach(pokemon => {
    
